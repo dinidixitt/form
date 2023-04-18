@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> forms</title>
+</head>
+
+<body>
+    <h1>This is html forms tutorial</h1>
+    <form action="backend.php">
+
+        <!-- label used for selecting the block of that particular thing which we have mentioned in the label tag -->
+        <label for="name"> Name </label>
+
+
+        <!-- actions specify where the form will get submit      -->
+        <div>
+            <input type="text" name="myname" id="myname">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myrole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myemail">
+            <!-- name in the input email box is a thing by which our backend will recognise our email(same functions of my name , myrole) , backend where we will submit our data  -->
+        </div>
+        <br>
+        <div>
+            Date:<input type="date" name="my date" id="">
+        </div>
+        <br>
+
+        <form action="backend.php"></form>
+        <label for="are you eligible">Are you eligible?:</label>
+        <div>
+            <input type="checkbox" name="myEligibility">
+            <!-- we can use checked at last if we want to keep that selected always  -->
+        </div>
+        <br>
+        <div>
+            Gender: male <input type="radio" name="mygender">
+            female <input type="radio" name="mygender">
+            other <input type="radio" name="mygender">
+
+            <!-- radio is uses for inputting values in which we can select only one like gender, for it we should keep it in one name only  -->
+
+        </div>
+        <br>
+        <div>
+            write about yourself: <br><textarea name="my text" id="" cols="30" rows="5"></textarea>
+        </div>
+        <br>
+        <div>
+            <!-- id vahi honi chahiye jo for k andar daali hai  -->
+            <!-- select se hamko options milte hai , by default chahiye to selected use kar sakte hai  -->
+            <label for="car">car</label>
+            <select name="mycar" id="car">
+                <option value="indica">Indica</option>
+                <option value="swift desire" selected>swift </option>
+                <option value="grandi10">grand
+                </option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit now">
+            <input type="reset"  value="reset now">
+        </div>
+    </form>
+
+    <a href="https://www.codewithharry.com/videos/web-development-in-hindi-8/" target="_blank"> click to read notes on forms of html</a>
+</body>
+
+</html>
+<!-- we can use many like inputs like input checkbox, inputbonus etc -->
